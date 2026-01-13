@@ -1,0 +1,42 @@
+/* shared styles */
+
+.display-flex{
+    display: flex;
+}
+
+.btn-primary{
+
+
+}
+.dark-blue{
+
+    color: #363958;
+}
+.light-red{
+    color: #F46060;
+}
+
+
+/* header related styles */
+
+header> nav ,section{
+
+    max-width: 1160px;
+    margin: 0 auto;
+}
+.navbar{
+    justify-items: end;
+    margin-top: 37px;
+}
+.navbar-links{
+    gap: 40px;
+    
+}
+.navbar-item{
+    list-style: none;
+}
+.navbar-item-link{
+    text-decoration: none;
+    font-weight: 500;
+    color: #3C3C3C;
+}
