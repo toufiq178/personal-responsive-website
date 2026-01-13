@@ -5,7 +5,13 @@
 }
 
 .btn-primary{
-
+    background: linear-gradient(to bottom, #ff6a6a, #ff8a65);
+    border-radius: 6px;
+    border: none;
+    padding: 18px 56px ;
+    font-weight: 500;
+    color: white;
+    
 
 }
 .dark-blue{
@@ -14,6 +20,9 @@
 }
 .light-red{
     color: #F46060;
+}
+.gray{
+    color: #3E3E3E;
 }
 
 
@@ -24,6 +33,8 @@ header> nav ,section{
     max-width: 1160px;
     margin: 0 auto;
 }
+
+/* navbar related styles */
 .navbar{
     justify-items: end;
     margin-top: 37px;
@@ -39,4 +50,66 @@ header> nav ,section{
     text-decoration: none;
     font-weight: 500;
     color: #3C3C3C;
+}
+
+/* banner related styles */
+
+.banner-tittle-container , .about-tittle-container{
+
+    justify-content: space-between;
+    align-items: center;
+    gap: 231px;
+}
+.banner-tittle{
+    font-size: 5rem;
+    margin: 0;
+}
+.banner-tittle-image , .about-tittle-image{
+    max-width: 465px;
+}
+.banner-tittle-image img , .about-tittle-image img{
+    
+    width: 100%;
+    height: auto;
+}
+.banner-decription {
+    margin-top: 0px;
+    margin-bottom: 36px;
+}
+
+.about-tittle-container{
+    flex-direction: row-reverse;
+}
+.about-tittle{
+    font-size: 3.1rem;
+    font-weight: bold;
+}
+.circle{
+    display: flex;
+    justify-self: right;
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    border: none;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #ff6a6a, #ff8a65);
+    margin-top: -150px;
+
+}
+
+
+/* responsive for small device */
+
+@media screen and (max-width:576px) {
+
+    .navbar{
+
+        justify-items: start;
+    }
+    .banner-tittle-container , .about-tittle-container {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    
 }
